@@ -1,0 +1,26 @@
+{
+  "name": "eslint-config-demo",
+  "version": "1.0.0",
+  "description": "ESLint 配置使用示例和测试",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint:examples": "eslint examples/",
+    "lint:tests": "eslint tests/",
+    "test": "npm run test:errors && npm run test:warnings && npm run test:custom",
+    "test:errors": "eslint tests/error-cases.js --format=compact",
+    "test:warnings": "eslint tests/warning-cases.js --format=compact",
+    "test:custom": "eslint tests/custom-rules.js --format=compact",
+    "test:run": "node test-runner.js",
+    "demo": "node run-demo.js"
+  },
+  "devDependencies": {
+    "eslint": "^9.35.0",
+    "@eslint/js": "^9.35.0",
+    "eslint-plugin-import": "^2.31.0"
+  },
+  "engines": {
+    "node": ">= 18.18.0"
+  }
+}

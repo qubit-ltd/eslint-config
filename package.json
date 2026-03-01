@@ -20,9 +20,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "deploy": "npm publish --registry='https://npm.qubit.ltd/' --access public",
-    "deploy:public": "npm publish --registry='https://registry.npmjs.org/' --access public",
-    "deploy:all": "npm run deploy && npm publish --registry='https://registry.npmjs.org/' --access public"
+    "deploy": "npm publish --registry='https://registry.npmjs.org/' --access public"
   },
   "dependencies": {
     "@eslint/js": "^9.35.0",

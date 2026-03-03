@@ -1,6 +1,6 @@
 {
   "name": "@qubit-ltd/eslint-config",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "ESLint rule configuration for the JavaScript coding style.",
   "keywords": [
     "eslint",
@@ -20,7 +20,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "deploy": "npm publish --registry='https://registry.npmjs.org/' --access public"
+    "deploy": "npm publish --@qubit-ltd:registry='https://registry.npmjs.org/' --access public"
   },
   "dependencies": {
     "@eslint/js": "^9.35.0",
